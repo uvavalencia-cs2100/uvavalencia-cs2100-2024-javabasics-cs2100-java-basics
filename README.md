@@ -16,10 +16,18 @@ Notes:
 Create a class named _GuessNumber.java_ with a runnable public main method which will be in charge of guessing an initial random number.
 
 Notes:
+- Do this in Java
 - The initial random number needs to be created at the begining and within the range from 0 to 100
 - The program will need to read the user input and determine if the number is the exact, lower or higher.
 - In case of not matching the expected number, help the user printing if it is higher or lower.
 - The program will not end until the number is found or the input text "quit" is found. 
+- only use this knowladge of arrays : 
+Declare an array: 
+int[] numbers = {1, 2, 3, 4, 5};
+
+Get the element of an array
+
+int first_number = numbers[0]; 
 
 
 ## Assignment 3
