@@ -26,6 +26,7 @@ public class SpanishDate extends SimpleDate{
         }
     }
 
+    // dd/mm/yyyy
     public SpanishDate(String date) {
         String[] parts = date.split("/");
         if (parts.length != 3) {

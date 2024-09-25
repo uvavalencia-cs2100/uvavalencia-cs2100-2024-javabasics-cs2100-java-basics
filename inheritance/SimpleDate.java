@@ -17,8 +17,10 @@ public class SimpleDate {
 
     public SimpleDate() {}
 
+    /*
+    @param day The day of the date. Format YYYYMMDD
+     */
     public SimpleDate(int fullDate) {
-        try {
         String fullDateString = Integer.toString(fullDate);
         if (fullDateString.length() != 8) {
             throw new IllegalArgumentException("Invalid date");
@@ -26,9 +28,6 @@ public class SimpleDate {
         this.year = Integer.parseInt(fullDateString.substring(0, 4));
         this.month = Integer.parseInt(fullDateString.substring(4, 6));
         this.day = Integer.parseInt(fullDateString.substring(6, 8));
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid date");
-        }
     }
 
     public int getDay() {
