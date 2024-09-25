@@ -36,6 +36,9 @@ Create a class named _Factorial.java_ that calculates the factorial of a number 
 
 Notes:
 - Use the input _args_ parameters of the main method.
+- do this in Java 
+- only use basic concepts such as controls structures, methods and parameters, objects, references, classes, and arrays
+
 
 
 ## Assignment 4
