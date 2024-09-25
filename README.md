@@ -48,6 +48,9 @@ Create a class named _PrimeNumber.java_ that checks whether a given input parame
 
 Notes:
 - Use the input _args_ parameters of the main method.
+- do this in Java 
+- only use basic concepts such as controls structures, methods and parameters, objects, references, classes, and arrays
+- no need for an error message or catch block
 
 ## Assignment 5
 
