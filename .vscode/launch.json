@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FindMinMax",
+            "request": "launch",
+            "mainClass": "FindMinMax",
+            "projectName": "uvavalencia-cs2100-2024-javabasics-cs2100-java-basics_c2ef912f"
+        },
+        {
+            "type": "java",
             "name": "PrimeNumber",
             "request": "launch",
             "mainClass": "PrimeNumber",

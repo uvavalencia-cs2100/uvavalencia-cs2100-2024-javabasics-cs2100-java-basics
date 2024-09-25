@@ -21,13 +21,6 @@ Notes:
 - The program will need to read the user input and determine if the number is the exact, lower or higher.
 - In case of not matching the expected number, help the user printing if it is higher or lower.
 - The program will not end until the number is found or the input text "quit" is found. 
-- only use this knowladge of arrays : 
-Declare an array: 
-int[] numbers = {1, 2, 3, 4, 5};
-
-Get the element of an array
-
-int first_number = numbers[0]; 
 
 
 ## Assignment 3
@@ -36,8 +29,6 @@ Create a class named _Factorial.java_ that calculates the factorial of a number 
 
 Notes:
 - Use the input _args_ parameters of the main method.
-- do this in Java 
-- only use basic concepts such as controls structures, methods and parameters, objects, references, classes, and arrays
 
 
 
@@ -48,9 +39,6 @@ Create a class named _PrimeNumber.java_ that checks whether a given input parame
 
 Notes:
 - Use the input _args_ parameters of the main method.
-- do this in Java 
-- only use basic concepts such as controls structures, methods and parameters, objects, references, classes, and arrays
-- no need for an error message or catch block
 
 ## Assignment 5
 
