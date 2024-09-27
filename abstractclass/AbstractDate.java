@@ -1,8 +1,7 @@
 package abstractclass;
 
 /*
-    This class represents an example abstract date with day, month and year for testing purposes of Inheritance. 
-    In a real-world scenario, you should use the java.time.LocalDate class.
+    This class represents an example abstract date with day, month and year for testing purposes of Abstract classes. 
  */
 public abstract class AbstractDate {
 
