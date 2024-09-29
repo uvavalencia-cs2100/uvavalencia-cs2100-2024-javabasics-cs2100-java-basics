@@ -1,6 +1,6 @@
 package interfaces;
 
-public class ManageDates {
+public class Main {
 
     public static void main(String[] args) {
         DateOperations spanishDate1 = new SpanishDate(1, 2, 2020);

@@ -1,6 +1,6 @@
 package abstractclass;
 
-public class ManageDates {
+public class Main {
 
     public static void main(String[] args) {
 

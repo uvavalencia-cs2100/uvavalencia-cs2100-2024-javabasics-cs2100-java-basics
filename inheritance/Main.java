@@ -2,7 +2,7 @@ package inheritance;
 
 import java.util.Date;
 
-public class ManageDates {
+public class Main {
 
     public static void main(String[] args) {
 
