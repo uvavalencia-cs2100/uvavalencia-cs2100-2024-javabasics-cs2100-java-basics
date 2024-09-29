@@ -3,9 +3,9 @@ package interfaces;
 /*
     This class represents a interface date with day, month and year for testing purposes of Interfaces. 
  */
-public interface MyDateOperations extends MyDate{
+public interface MyDateOperations extends MyDate {
 
-    public default int amountOfDaysTo(SimpleDate otherDate) {
+    public default int amountOfDaysTo(MyDateOperations otherDate) {
         int days = 0;
         if (this.compareTo(otherDate) > 0) {
             for (int i = otherDate.getYear(); i < this.getYear(); i++) {
@@ -33,16 +33,6 @@ public interface MyDateOperations extends MyDate{
             days -= this.getDay();
         }
         return days;
-}
-
-    public default int compareTo (SimpleDate otherDate) {
-        if (getYear() != otherDate.getYear()) {
-            return getYear() - otherDate.getYear();
-        } else if (getMonth() != otherDate.getMonth()) {
-            return getMonth() - otherDate.getMonth();
-        } else {
-            return getDay() - otherDate.getDay();
-        }
     }
 
 }
