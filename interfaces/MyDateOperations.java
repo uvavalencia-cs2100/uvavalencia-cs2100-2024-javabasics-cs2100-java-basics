@@ -3,14 +3,7 @@ package interfaces;
 /*
     This class represents a interface date with day, month and year for testing purposes of Interfaces. 
  */
-public interface DateOperations {
-
-    public int getDay();
-    public int getMonth();
-    public int getYear();
-    public void setDay(int day);
-    public void setMonth(int month);
-    public void setYear(int year);
+public interface MyDateOperations extends MyDate{
 
     public default int amountOfDaysTo(SimpleDate otherDate) {
         int days = 0;

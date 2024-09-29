@@ -3,7 +3,7 @@ package interfaces;
 public class Main {
 
     public static void main(String[] args) {
-        DateOperations spanishDate1 = new SpanishDate(1, 2, 2020);
+        MyDateOperations spanishDate1 = new SpanishDate(1, 2, 2020);
         SimpleDate spanishDate2 = new SpanishDate(10, 3, 2020);
 
         int amountOfDaysTo = spanishDate1.amountOfDaysTo(spanishDate2);

@@ -4,7 +4,7 @@ package interfaces;
     This class represents a simple date with day, month and year for testing purposes of Inheritance. 
     In a real-world scenario, you should use the java.time.LocalDate class.
  */
-public class SimpleDate  implements DateOperations {
+public class SimpleDate  implements MyDateOperations {
 
     private int day;
     private int month;
