@@ -33,5 +33,4 @@ public class Main {
         System.out.println("Amount of days from SimpleDate to americanDate: " + amountOfDaysTo);
 
     }
-    
 }

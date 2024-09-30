@@ -35,4 +35,5 @@ public interface MyDateOperations extends MyDate {
         return days;
     }
 
+    public String toString();
 }
