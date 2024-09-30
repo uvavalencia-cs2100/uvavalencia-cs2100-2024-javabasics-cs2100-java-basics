@@ -1,23 +1,23 @@
-package inheritance;
+package abstractclass;
 
-public class SpanishDate extends SimpleDate{
+public class AmericanDate extends AbstractDate{
 
-    public SpanishDate(int day, int month, int year) {
-        this.setDay(day);
+    public AmericanDate(int month, int day, int year) {
         this.setMonth(month);
+        this.setDay(day);
         this.setYear(year);
     }
 
-    public SpanishDate(String day, String month, String year) {
-        try {
-            this.setDay(Integer.parseInt(day));
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid day");
-        }
+    public AmericanDate(String month, String day, String year) {
         try {
             this.setMonth(Integer.parseInt(month));
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Invalid month");
+        }
+        try {
+            this.setDay(Integer.parseInt(day));
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Invalid day");
         }
         try {
             this.setYear(Integer.parseInt(year));
@@ -26,21 +26,21 @@ public class SpanishDate extends SimpleDate{
         }
     }
 
-    // dd/mm/yyyy
-    public SpanishDate(String date) {
+    // mm/dd/yyyy
+    public AmericanDate(String date) {
         String[] parts = date.split("/");
         if (parts.length != 3) {
             throw new IllegalArgumentException("Invalid date");
         }
         try {
-            this.setDay(Integer.parseInt(parts[0]));
-        } catch (NumberFormatException e) {
-            throw new IllegalArgumentException("Invalid day");
-        }
-        try {
-            this.setMonth(Integer.parseInt(parts[1]));
+            this.setMonth(Integer.parseInt(parts[0]));
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Invalid month");
+        }
+        try {
+            this.setDay(Integer.parseInt(parts[1]));
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Invalid day");
         }
         try {
             this.setYear(Integer.parseInt(parts[2]));
@@ -51,7 +51,7 @@ public class SpanishDate extends SimpleDate{
 
     @Override
     public String toString() {
-        return this.getDay() + "/" + this.getMonth() + "/" + this.getYear();
+        return this.getMonth() + "/" + this.getDay() + "/" + this.getYear();
     }
 
 

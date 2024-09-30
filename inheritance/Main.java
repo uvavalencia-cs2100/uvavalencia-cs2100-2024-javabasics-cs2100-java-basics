@@ -2,7 +2,7 @@ package inheritance;
 
 import java.util.Date;
 
-public class ManageDates {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class ManageDates {
         SimpleDate simpleDate1 = new SimpleDate(20200201);
         System.out.println("SimpleDate1: \n" + simpleDate1);
 
-        // Spanish Date
+        // // Spanish Date
         SpanishDate spanishDate1 = new SpanishDate(1, 2, 2020);
         SpanishDate spanishDate2 = new SpanishDate("1", "2", "2020");
         SpanishDate spanishDate3 = new SpanishDate("1/3/2021");
@@ -28,14 +28,14 @@ public class ManageDates {
         } else {
             System.out.println("[WARN] SpanishDate1 and SpanishDate2 are not equal");
         }
-        int amountOfDaysTo = simpleDate1.amountOfDaysTo(spanishDate3);
+        int amountOfDaysTo = spanishDate3.amountOfDaysTo(simpleDate1);
         System.out.println("Amount of days from SimpleDate1 to spanishDate3: " + amountOfDaysTo);
         int daysToExam = SimpleDate.fromDate(new Date()).amountOfDaysTo(SimpleDate.FINAL_EXAM);
         System.out.println("Amount of days to FINAL_EXAM: " + daysToExam);
 
         // American Date
         AmericanDate americanDate1 = new AmericanDate(1, 1, 2022);
-        AmericanDate americanDate2 = new AmericanDate("2", "1", "2022");
+        AmericanDate americanDate2 = new AmericanDate("2", "21", "2022");
         AmericanDate americanDate3 = new AmericanDate("3/1/2022");
         System.out.println("AmericanDate1: " + americanDate1);
         System.out.println("AmericanDate1: " + americanDate2);
@@ -50,7 +50,6 @@ public class ManageDates {
         } else {
             System.out.println("[WARN] Timestamp1 and Timestamp2 are not equal");
         }
-
     }
     
 }

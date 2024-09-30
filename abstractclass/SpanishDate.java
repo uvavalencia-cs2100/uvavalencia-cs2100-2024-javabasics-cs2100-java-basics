@@ -1,6 +1,6 @@
-package inheritance;
+package abstractclass;
 
-public class SpanishDate extends SimpleDate{
+public class SpanishDate extends AbstractDate{
 
     public SpanishDate(int day, int month, int year) {
         this.setDay(day);

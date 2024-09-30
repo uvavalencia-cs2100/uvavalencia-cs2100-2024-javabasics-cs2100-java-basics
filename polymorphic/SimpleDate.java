@@ -1,12 +1,6 @@
-package inheritance;
+package polymorphic;
 
-import java.util.Calendar;
-import java.util.Date;
 
-/*
-    This class represents a simple date with day, month and year for testing purposes of Inheritance. 
-    In a real-world scenario, you should use the java.time.LocalDate class.
- */
 public class SimpleDate {
 
     public static final SimpleDate FINAL_EXAM = new SimpleDate(20241218);
@@ -94,6 +88,7 @@ public class SimpleDate {
             }
             days -= this.day;
         }
+        System.out.println("The difference in days between " + this + " and " + otherDate + " is " + days);
         return days;
     }
 
@@ -104,29 +99,6 @@ public class SimpleDate {
             return this.month - otherDate.getMonth();
         } else {
             return this.day - otherDate.getDay();
-        }
-    }
-
-    public static SimpleDate fromDate(Date date) {
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
-        
-        int day = calendar.get(Calendar.DAY_OF_MONTH);
-        String dayString = day < 10 ? String.format("0%d", day) : String.valueOf(day);
-        int month = calendar.get(Calendar.MONTH) + 1; // Calendar.MONTH is zero-based
-        String monthString = month < 10 ? String.format("0%d", month) : String.valueOf(month);
-        int year = calendar.get(Calendar.YEAR);
-        int fullDate = Integer.parseInt(String.format("%d%s%s",year,monthString,dayString));
-        return new SimpleDate(fullDate);
-    }
-
-    @Override
-    public boolean equals(Object otherDateObject) {
-        if (otherDateObject != null && otherDateObject instanceof SimpleDate) {
-            SimpleDate otherDate = (SimpleDate) otherDateObject;
-            return this.day == otherDate.getDay() && this.month == otherDate.getMonth() && this.year == otherDate.getYear();
-        } else{
-            return false;
         }
     }
 

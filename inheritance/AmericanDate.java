@@ -26,6 +26,7 @@ public class AmericanDate extends SimpleDate{
         }
     }
 
+    // mm/dd/yyyy
     public AmericanDate(String date) {
         String[] parts = date.split("/");
         if (parts.length != 3) {
