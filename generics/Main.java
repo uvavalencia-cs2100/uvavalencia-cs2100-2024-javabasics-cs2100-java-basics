@@ -2,22 +2,30 @@ package generics;
 
 public class Main {
         public static void main(String[] args) {
+
+
+        Car car1 = new Car("Toyota");
+        Car car2 = new Car("BMW");
+        car1.compareTo(car2);
+        car1.compareTo("Dummy");
+        car1.compareTo(1234);
+
         // Creating TaskManager to handle tasks
-        TaskManager<Task> taskManager = new TaskManager<>();
+        // TaskManager<Task> taskManager = new TaskManager<>();
 
-        // Creating specific tasks
-        PayInvoiceTask invoiceTask = new PayInvoiceTask(1234L, 1000.0);
-        PaySalaryTask jensenSalaryTask = new PaySalaryTask("jensen");
-        PaySalaryTask rachelSalaryTask = new PaySalaryTask("rachel");
-        PaySalaryTask anastasiiaSalaryTask = new PaySalaryTask("anastasiia");
+        // // Creating specific tasks
+        // PayInvoiceTask invoiceTask = new PayInvoiceTask(1234L, 1000.0);
+        // PaySalaryTask jensenSalaryTask = new PaySalaryTask("jensen");
+        // PaySalaryTask rachelSalaryTask = new PaySalaryTask("rachel");
+        // PaySalaryTask anastasiiaSalaryTask = new PaySalaryTask("anastasiia");
 
-        // Adding tasks to the task manager's queue
-        taskManager.addTask(anastasiiaSalaryTask);
-        taskManager.addTask(invoiceTask);
-        taskManager.addTask(jensenSalaryTask);
-        taskManager.addTask(rachelSalaryTask);
+        // // Adding tasks to the task manager's queue
+        // taskManager.addTask(anastasiiaSalaryTask);
+        // taskManager.addTask(invoiceTask);
+        // taskManager.addTask(jensenSalaryTask);
+        // taskManager.addTask(rachelSalaryTask);
 
-        // Processing the tasks in FIFO order
-        taskManager.processTasks();
+        // // Processing the tasks in FIFO order
+        // taskManager.processTasks();
     }
 }
