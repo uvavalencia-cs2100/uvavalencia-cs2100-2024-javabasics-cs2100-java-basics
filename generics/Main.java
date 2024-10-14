@@ -7,8 +7,7 @@ public class Main {
         Car car1 = new Car("Toyota");
         Car car2 = new Car("BMW");
         car1.compareTo(car2);
-        car1.compareTo("Dummy");
-        car1.compareTo(1234);
+
 
         // Creating TaskManager to handle tasks
         // TaskManager<Task> taskManager = new TaskManager<>();
