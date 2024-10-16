@@ -33,6 +33,7 @@ public class BankAccount {
         balance -= amount;
         totalWithdrawnToday += amount;
         System.out.println("Withdrew: $" + amount);
+        //throw new Error("This is a Uncaught Error");
     }
 
     public double getBalance() {

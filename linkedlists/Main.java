@@ -18,5 +18,6 @@ public class Main {
         System.out.println("Does the list contain 'Orange'? " + list.contains("Orange"));
         System.out.println("Size of the list: " + list.size());
 
+
     }
 }

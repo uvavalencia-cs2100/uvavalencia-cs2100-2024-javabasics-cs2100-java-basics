@@ -15,12 +15,8 @@ public class LinkedList<T> {
         if (head == null) {
             head = newNode;
         } else {
-            Node<T> current = head;
-            // Traverse to the end of the list
-            while (current.getNext() != null) {
-                current = current.getNext();
-            }
-            current.setNext(newNode);
+            newNode.setNext(head.getNext());
+            head.setNext(newNode);
         }
     }
 
